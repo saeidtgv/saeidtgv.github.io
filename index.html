@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="bs-light">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SaeidTaghavi</title>
+    <title>Saeid Taghavi</title>
     <link rel="shortcut icon" type="image/png" href="./statics/img/ST_1.2.png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         crossorigin="anonymous" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./statics/css/styles.css" />
+    <link rel="stylesheet" href="./statics/css/main.min.css" />
+
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
 </head>
@@ -22,27 +21,27 @@
 <body>
     <!-- <div style="margin-right:20rem; margin-left:20rem; "> -->
 
-    <div class="container-lg p-0">
+    <div class="container-lg p-2 pt-0">
         <div class="row">
             <div class="col-md-1 col-xl-2 p-0 m-0">
             </div>
             <div class="col-md-10 col-xl-8 p-0 m-0">
                 <div class="">
                     <!-- Navbar -->
-                    <nav class="navbar sticky-top navbar-expand-lg navbar-light border-bottom Neutral-b-100">
+                    <nav class="navbar sticky-top navbar-expand-lg border-bottom pt-0">
                         <div class="container-fluid d-flex align-items-lg-center justify-content-lg-center mt-3 mb-1">
                             <a class="navbar-brand fw-bolder">
-                                <img src="./statics/img/ST_1.2.png" class="w-21 m-0 p-0" />
+                                <img src="" class="logo-icon w-21 m-0 p-0" id="my_logo" />
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <i class="bi bi-list H2"></i>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link nav-hover" aria-current="page" href="">Home</a>
+                                        <a class="nav-link nav-hover" aria-current="page" href="#">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link nav-hover" href="#about">About</a>
@@ -56,9 +55,57 @@
                                 </ul>
                                 <ul class="navbar-nav me mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a href="#contact" class="nav-link btn btn fw-bolder d-flex icon-hover">Contact
+                                        <a href="#contact" class="nav-link btn fw-bolder d-flex icon-hover">Contact
                                             <i class="bi bi-arrow-up-right mx-2"></i></a>
                                     </li>
+                                    <li class="nav-item dropdown" id="themesss">
+                                        <button
+                                            class="btn dropdown-hover btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                                            id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                                            data-bs-display="static">
+                                            <div class="theme-icon-active">
+                                                <i class="bi bi-sun-fill"></i>
+                                            </div>
+                                            <span class="d-lg-none ms-2">Toggle theme</span>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme">
+                                            <li>
+                                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                                    data-bs-theme-value="bs-light">
+                                                    <div class="me-2 opacity-50 theme-icon">
+                                                        <i class="bi bi-sun-fill"></i>
+                                                    </div>
+                                                    Light
+                                                    <div class="ms-auto d-none">
+                                                        <i class="bi bi-check2"></i>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                                    data-bs-theme-value="bs-dark">
+                                                    <div class="me-2 opacity-50 theme-icon">
+                                                        <i class="bi bi-moon-fill"></i>
+                                                    </div>
+                                                    Dark
+                                                    <div class="ms-auto d-none">
+                                                        <i class="bi bi-check2"></i>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <!-- <li>
+                                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                                    data-bs-theme-value="auto">
+                                                    <div class="me-2 opacity-50 theme-icon">
+                                                        <i class="bi bi-circle-half"></i>
+                                                    </div>
+                                                    Auto
+                                                    <i class="ms-auto d-none bi bi-check2"></i>
+                                                </button>
+                                            </li> -->
+                                        </ul>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -94,7 +141,7 @@
                     </div>
 
                     <div class="container-xxl align-items-md-center my-md-5" id="about">
-                        <hr class="dropdown-divider Neutral-t-500" />
+                        <hr class="dropdown-divider" />
                     </div>
 
 
@@ -106,77 +153,82 @@
                         <div class="row">
                             <div class="col-md-12 m-0 p-0">
                                 <div class="card border-0">
-                                    <h1 class="card-header border-0 fw-bolder Neutral-b-100">About</h1>
+                                    <h1 class="card-header border-0 fw-bolder">About</h1>
                                     <div class="card-body">
-                                        <p class="card-text Neutral-t-600"></p>
+                                        <p class="card-text"></p>
                                         <div class="row">
 
                                             <div class="col-lg-12 pt-4 pt-lg-0 content">
-                                                <h4 class="text-center fw-bolder">Full Stack Web Developer</h4>
-                                                <p class="font-italic text-center Neutral-t-600"></p>
+                                                <h4 class="text-center fw-bolder mb-4">Full Stack Web Developer</h4>
+
                                                 <div class="row">
                                                     <div class="col-sm-6">
                                                         <ul>
-                                                            <li class="Neutral-t-700 my-2">
-                                                                <strong class="Neutral-t-900">Birthday:</strong>
+                                                            <li class="text-c1 my-2">
+                                                                <strong class="text-c2">Birthday:</strong>
                                                                 May 17, 2001
                                                             </li>
-                                                            <li class="Neutral-t-700 my-2">
-                                                                <strong class="Neutral-t-900">Website:</strong>
-                                                                <a class="Neutral-t-700 no-underline icon-hover"
+                                                            <li class="text-c1 my-2">
+                                                                <strong class="text-c2">Website:</strong>
+                                                                <a class="text-c1 no-underline icon-hover"
                                                                     href=" https://saeidtgv.github.io">
                                                                     https://saeidtgv.github.io</a>
                                                             </li>
-                                                            <li class="Neutral-t-700 my-2">
-                                                                <strong class="Neutral-t-900">Phone:</strong>
-                                                                <a href="tel:+989102731491" class="btn m-0 p-0 disabled">+989102731491</a>
-                                                            </li>
-                                                            <li class="Neutral-t-700 my-2">
-                                                                <strong class="Neutral-t-900">City:</strong>
+                                                            <li class="text-c1 my-2">
+                                                                <strong class="text-c2">City:</strong>
                                                                 Tehran
                                                             </li>
                                                         </ul>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <ul>
-                                                            <li class="Neutral-t-700 my-2">
-                                                                <strong class="Neutral-t-900">Age:</strong>
-                                                                21
-                                                            </li>
-                                                            <li class="Neutral-t-700 my-2">
-                                                                <strong class="Neutral-t-900">Degree:</strong>
+                                                            <li class="text-c1 my-2">
+                                                                <strong class="text-c2">Degree:</strong>
                                                                 Associate Electrical Engineering
                                                             </li>
-                                                            <li class="Neutral-t-700 my-2">
-                                                                <strong class="Neutral-t-900">Email:</strong>
+                                                            <li class="text-c1 my-2">
+                                                                <strong class="text-c2">Email:</strong>
                                                                 saeid.tgv80@gmail.com
                                                             </li>
-                                                            <li class="Neutral-t-700 my-2">
-                                                                <strong class="Neutral-t-900">Freelance:</strong>
+                                                            <li class="text-c1 my-2">
+                                                                <strong class="text-c2">Freelance:</strong>
                                                                 Available
                                                             </li>
                                                         </ul>
                                                     </div>
+                                                    <div class="col-sm-12 mt-5">
+                                                        <p class="text-c1">
+                                                            I'm <strong>Saeid</strong>, a freelance web developer,
+                                                            living in
+                                                            Tehran.
+                                                        </p>
+                                                        <p class="text-c1">
+                                                            Electrical engineer and developer with 1+ years of
+                                                            experience in web design and development with
+                                                            <strong>Django</strong> and
+                                                            <strong>React</strong>.
+                                                        </p>
+                                                        <p class="text-c1">
+                                                            My open-source projects and experiments are available on
+                                                            GitHub.
+                                                        </p>
+                                                    </div>
                                                 </div>
-
-                                                <p class="Neutral-t-600">
-
-                                                </p>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
 
                     </div>
+
+
                     <!-- about_about -->
 
 
                     <div class="container-xxl align-items-md-center my-5">
-                        <hr class="dropdown-divider Neutral-t-500">
+                        <hr class="dropdown-divider">
                     </div>
 
                     <!-- about_skills -->
@@ -185,7 +237,7 @@
                     <div class="container-xxl align-items-md-center my-md-4 py-4">
                         <div class="col-md-12 p-0 my-2">
                             <div class="card border-0">
-                                <h1 class="card-header border-0 fw-bolder Neutral-b-100">Skills</h1>
+                                <h1 class="card-header border-0 fw-bolder">Skills</h1>
                                 <div class="card-body">
                                     <p class="card-text"></p>
                                 </div>
@@ -197,7 +249,7 @@
                                     <i class="ms-auto bd-highlight">80%</i>
                                 </span>
                                 <div class="progress">
-                                    <div class="progress-bar Neutral-b-750" style="width:80%" role="progressbar"
+                                    <div class="progress-bar bg-progress-80" style="width:80%" role="progressbar"
                                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
@@ -206,7 +258,7 @@
                                     <i class="ms-auto bd-highlight">70%</i>
                                 </span>
                                 <div class="progress">
-                                    <div class="progress-bar Neutral-b-700" style="width:70%" role="progressbar"
+                                    <div class="progress-bar bg-progress-70" style="width:70%" role="progressbar"
                                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
@@ -215,7 +267,7 @@
                                     <i class="ms-auto bd-highlight">60%</i>
                                 </span>
                                 <div class="progress">
-                                    <div class="progress-bar Neutral-b-650" style="width:60%" role="progressbar"
+                                    <div class="progress-bar bg-progress-60" style="width:60%" role="progressbar"
                                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
@@ -224,7 +276,7 @@
                                     <i class="ms-auto bd-highlight">50%</i>
                                 </span>
                                 <div class="progress">
-                                    <div class="progress-bar Neutral-b-600" style="width:50%" role="progressbar"
+                                    <div class="progress-bar bg-progress-50" style="width:50%" role="progressbar"
                                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
@@ -233,7 +285,7 @@
                                     <i class="ms-auto bd-highlight">40%</i>
                                 </span>
                                 <div class="progress">
-                                    <div class="progress-bar Neutral-b-550" style="width:40%" role="progressbar"
+                                    <div class="progress-bar bg-progress-40" style="width:40%" role="progressbar"
                                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
@@ -242,7 +294,7 @@
                                     <i class="ms-auto bd-highlight">30%</i>
                                 </span>
                                 <div class="progress">
-                                    <div class="progress-bar Neutral-b-500" style="width:30%" role="progressbar"
+                                    <div class="progress-bar bg-progress-30" style="width:30%" role="progressbar"
                                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
@@ -251,7 +303,7 @@
                     <!-- about_skills -->
 
                     <div class="container-xxl align-items-md-center my-5" id="resume">
-                        <hr class="dropdown-divider Neutral-t-500">
+                        <hr class="dropdown-divider">
                     </div>
                     <!-- about_resume -->
 
@@ -259,7 +311,7 @@
                     <div class="container-xxl align-items-md-center my-md-4 py-4">
                         <div class="col-md-12 p-0 my-2">
                             <div class="card border-0">
-                                <h1 class="card-header border-0 fw-bolder Neutral-b-100">Resume</h1>
+                                <h1 class="card-header border-0 fw-bolder">Resume</h1>
                                 <div class="card-body">
                                     <p class="card-text"></p>
                                 </div>
@@ -269,47 +321,18 @@
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-12" data-aos="fade-up">
-                                        <h3 class="fw-bolder">Sumary</h3>
-                                        <div class="row">
-                                            <div class="col-md-12 p-0">
-                                                <div class="card border-0">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title fw-bolder">Saeid Taghavi</h5>
-                                                        <p class="card-text">
-                                                            Electrical engineer and developer with 1+ years of
-                                                            experience in web design and development with Django and
-                                                            React.
-                                                        <ul role="list" class="">
-                                                            <li class="list-item Neutral-t-600">
-                                                                Iran/Tehran
-                                                            </li>
-                                                            <li class="list-item Neutral-t-600">
-
-                                                            </li>
-                                                            <li class="list-item Neutral-t-600">
-
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12" data-aos="fade-up">
                                         <h3 class="fw-bolder">Education</h3>
                                         <div class="row">
                                             <div class="col-md-12 p-0">
                                                 <div class="card border-0">
                                                     <div class="card-body">
-                                                        <h5 class="card-title fw-bolder">Associate Electrical
-                                                            Engineering</h5>
+                                                        <h5 class="card-title fw-bolder">Associate's degree in
+                                                            Electrical Engineering</h5>
                                                         <p class="card-text">
-                                                            <time class="mb-4 Neutral-t-500">
+                                                            <time class="mb-4 datetime">
                                                                 September 2018 — February 2022
                                                             </time>
                                                         <p><em>IRB University</em></p>
-                                                        <p></p>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -319,65 +342,55 @@
                                 </div>
                             </div>
                             <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                                <h3 class="fw-bolder">Professional Experience</h3>
+                                <h3 class="fw-bolder">Experience</h3>
                                 <div class="row">
 
                                     <div class="col-md-12 p-0">
+
+                                        <div class="card border-0">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bolder">
+                                                    Alzahra University
+                                                </h5>
+                                                <p class="card-text mb-0">
+                                                    <time class="datetime">
+                                                        June 2022 — Present
+                                                    </time>
+                                                </p>
+                                                <p class="mb-4 pt-0 datetime">
+                                                    Part-time
+                                                </p>
+                                                <ul role="list" class="">
+                                                    <li class="list-item text-c1">
+                                                        VDI project support
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                         <div class="card border-0">
                                             <div class="card-body">
                                                 <h5 class="card-title fw-bolder">
                                                     Prochista
                                                 </h5>
-                                                <p class="card-text">
-                                                    <span class="mb-4 Neutral-t-500">
+                                                <p class=" mb-0 card-text">
+                                                    <time class="mb-4 datetime">
                                                         December 2020 — November 2021
-                                                    </span>
+                                                    </time>
+                                                </p>
+                                                <p class="mb-4 pt-0 datetime">
+                                                    Full-time
+                                                </p>
                                                 <ul role="list" class="">
-                                                    <li class="list-item Neutral-t-600">
+                                                    <li class="list-item text-c1">
                                                         Full Stack Web Developer and data administrator
                                                     </li>
                                                 </ul>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="card border-0">
-                                            <div class="card-body">
-                                                <h5 class="card-title fw-bolder">
-                                                    Security +
-                                                </h5>
-                                                <p class="card-text">
-                                                    <span class="mb-4 Neutral-t-500">
-                                                        April 2021 — July 2021
-                                                    </span>
-                                                <ul role="list" class="">
-                                                    <li class="list-item Neutral-t-600">
-                                                        security + course iribu university
-                                                    </li>
-                                                </ul>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="card border-0">
-                                            <div class="card-body">
-                                                <h5 class="card-title fw-bolder">
-                                                    Lpic 1
-                                                </h5>
-                                                <p class="card-text">
-                                                    <time class="mb-4 Neutral-t-500">
-                                                        September 2021 — February 2022
-                                                    </time>
-                                                <ul role="list" class="">
-                                                    <li class="list-item Neutral-t-600">
-                                                        Lpic 1 course + iribu university
-                                                    </li>
-                                                </ul>
-                                                </p>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
-                            </div>
+                            </div>                         
                         </div>
                     </div>
                     <!-- about_resume -->
@@ -386,14 +399,14 @@
 
 
                     <div class="container-xxl align-items-md-center my-md-5" id="portfolio">
-                        <hr class="dropdown-divider Neutral-t-500" />
+                        <hr class="dropdown-divider" />
                     </div>
                     <!-- portfolio -->
                     <section class="container-xxl align-items-md-center my-md-4 py-4">
                         <div class="row">
                             <div class="col-sm-12 p-0">
                                 <div class="card border-0">
-                                    <h1 class="card-header border-0 Neutral-b-100 H1">Portfolio</h1>
+                                    <h1 class="card-header border-0 H1">Portfolio</h1>
                                     <div class="card-body">
                                         <h5 class="card-title"></h5>
                                         <p class="card-text">
@@ -401,26 +414,26 @@
                                 </div>
                             </div>
                             <div class="col-md-6 my-md-3 my-3 ">
-                                <div class="card border-0 Neutral-b-300 rounded-20 box-hover">
+                                <div class="card border-0 card-portfolio rounded-5 box-hover">
                                     <div class="card-body m-3 py-4">
                                         <div class="">
-                                            <img src="" alt="" class="rounded-20  shadow-sm w-23" />
+                                            <img src="" alt="" class="rounded-5  shadow-sm w-23" />
                                         </div>
                                         <div class="mt-4 mb-2 h5"></div>
                                         <h3 class="card-title">coming soon</h3>
-                                        <p class="card-text Neutral-t-600"></p>
+                                        <p class="card-text text-c1"></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 my-md-3 my-3 ">
-                                <div class="card border-0 Neutral-b-300 rounded-20 box-hover">
+                                <div class="card border-0 card-portfolio rounded-5 box-hover">
                                     <div class="card-body m-3 py-4">
                                         <div class="">
-                                            <img src="" alt="" class="rounded-20  shadow-sm w-23" />
+                                            <img src="" alt="" class="rounded-5  shadow-sm w-23" />
                                         </div>
                                         <div class="mt-4 mb-2 h5"></div>
                                         <h3 class="card-title">coming soon</h3>
-                                        <p class="card-text Neutral-t-600"></p>
+                                        <p class="card-text text-c1"></p>
                                     </div>
                                 </div>
                             </div>
@@ -429,7 +442,7 @@
                     <!-- end portfolio -->
 
                     <div class="container-xxl align-items-md-center my-md-5" id="contact">
-                        <hr class="dropdown-divider Neutral-t-500" />
+                        <hr class="dropdown-divider" />
                     </div>
                     <!-- contact -->
 
@@ -437,22 +450,22 @@
                         <div class="row">
                             <div class="col-sm-12 p-0">
                                 <div class="card border-0">
-                                    <h1 class="card-header border-0 Neutral-b-100 H1">Contact</h1>
+                                    <h1 class="card-header border-0 H1">Contact</h1>
                                     <div class="card-body H1">
-                                        <div class="d-sm-flex bd-highlight mb-3 my-4">
-                                            <div class="me-auto p-2 bd-highlight icon-hover"><i class="bi bi-envelope"></i>
-                                                <a href="mailto:saeid.tgv80@gmail.com"
-                                                    class="btn btn">saeid.tgv80@gmail.com </a>
+                                        <div class="d-sm-flex mb-3 my-4">
+                                            <div class="me-auto p-2 text-c1 icon-hover"><i class="bi bi-envelope"></i>
+                                                <a href="mailto:saeid.tgv80@gmail.com" class="btn">saeid.tgv80@gmail.com
+                                                </a>
                                             </div>
-                                            <div class="p-2 bd-highlight icon-hover"><i class="bi bi-phone"></i>
-                                                <a href="tel:+989102731491" class="btn btn">+989102731491 </a>
+                                            <div class="p-2 text-c1 icon-hover"><i class="bi bi-phone"></i>
+                                                <a href="tel:+989102731491" class="btn">+989102731491 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- <div class="col-sm-12 ">
-                                <div class="card border-0 Neutral-b-300 rounded-20">
+                                <div class="card border-0 card-portfolio rounded-20">
                                     <div class="card-body p-md-5">
                                         <form action="#" method="post">
 
@@ -462,7 +475,7 @@
                                                         <label for="exampleFormControlInput1"
                                                             class="form-label fw-bolder mb-4">Name</label>
                                                         <input type="text" name="name"
-                                                            class="form-control Neutral-b-300 border-0 border-bottom border-dark"
+                                                            class="form-control card-portfolio border-0 border-bottom border-dark"
                                                             id="exampleFormControlInput1"
                                                             placeholder="What’s your name?">
                                                     </div>
@@ -472,7 +485,7 @@
                                                         <label for="exampleFormControlInput1"
                                                             class="form-label fw-bolder mb-4">Email</label>
                                                         <input type="email" name="email"
-                                                            class="form-control Neutral-b-300 border-0 border-bottom border-dark"
+                                                            class="form-control card-portfolio border-0 border-bottom border-dark"
                                                             id="exampleFormControlInput1"
                                                             placeholder="What’s your email?">
                                                     </div>
@@ -482,7 +495,7 @@
                                                         <label for="exampleFormControlInput1"
                                                             class="form-label fw-bolder mb-4">Phone</label>
                                                         <input type="number" name="phone"
-                                                            class="form-control Neutral-b-300 border-0 border-bottom border-dark"
+                                                            class="form-control card-portfolio border-0 border-bottom border-dark"
                                                             id="exampleFormControlInput1"
                                                             placeholder="What’s your phone?">
                                                     </div>
@@ -492,7 +505,7 @@
                                                         <label for="exampleFormControlInput1"
                                                             class="form-label fw-bolder mb-4">Subject</label>
                                                         <input type="text" name="subject"
-                                                            class="form-control Neutral-b-300 border-0 border-bottom border-dark"
+                                                            class="form-control card-portfolio border-0 border-bottom border-dark"
                                                             id="exampleFormControlInput1" placeholder="How can I help?">
                                                     </div>
                                                 </div>
@@ -501,7 +514,7 @@
                                                         <label for="exampleFormControlTextarea1"
                                                             class="form-label fw-bolder mb-4">Message</label>
                                                         <textarea
-                                                            class="form-control Neutral-b-300 border-0 border-bottom border-dark"
+                                                            class="form-control card-portfolio border-0 border-bottom border-dark"
                                                             id="exampleFormControlTextarea1" rows="3"
                                                             placeholder="Hi there! I would like to get in touch with you to inquiry about a project."></textarea>
                                                     </div>
@@ -520,19 +533,19 @@
                         </div>
                     </section>
                     <div class="container-xxl align-items-md-center my-5">
-                        <hr class="dropdown-divider Neutral-t-500">
+                        <hr class="dropdown-divider">
                     </div>
                     <section class="container-xxl align-items-md-center my-md-4 py-4">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="card border-0">
-                                    <h1 class="card-header border-0 Neutral-b-100 H2">Follow me on social media</h1>
+                                    <h1 class="card-header border-0 H2">Follow me on social media</h1>
                                     <div class="card-body">
                                         <div class="row text-md-center">
                                             <div class="col-md-6 col-sm-6 my-md-4 my-3 d-flex justify-content-center">
                                                 <i class="bi bi-linkedin mx-2"></i>
                                                 <a href="https://www.linkedin.com/in/saeid-taghavi80"
-                                                    class="text-dark no-underline H5 fw-bold icon-hover d-flex">
+                                                    class="no-underline text-c1 H5 fw-bold icon-hover d-flex">
                                                     LinkedIn <i class="bi bi-arrow-up-right mx-2"></i>
                                                 </a>
                                             </div>
@@ -540,7 +553,7 @@
                                             <div class="col-md-6 col-sm-6 my-md-4 my-3 d-flex justify-content-center">
                                                 <i class="bi bi-github mx-2"></i>
                                                 <a href="https://github.com/saeidtgv"
-                                                    class="text-dark no-underline H5 fw-bold icon-hover d-flex">
+                                                    class="no-underline text-c1 H5 fw-bold icon-hover d-flex">
                                                     Github <i class="bi bi-arrow-up-right mx-2"></i>
                                                 </a>
                                             </div>
@@ -589,11 +602,8 @@
             </div>
         </div>
     </div>
-    <script src="./statics/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
+    <script src="./statics/js/script.js" defer></script>
+    <script src="./statics/bootstrap-5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
